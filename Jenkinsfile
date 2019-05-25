@@ -1,4 +1,4 @@
-@Library('DevopsLiv')_
+@Library('DevopsLib')_
 node(label:'master') {
    def mvnHome
    stage('Preparation') { // for display purposes
