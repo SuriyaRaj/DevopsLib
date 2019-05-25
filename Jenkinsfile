@@ -30,7 +30,7 @@ node {
    } 
 	stage('Sonar Quality gate')
    {   
-	   //withSonarQubeEnv('SonarQube') 
+	   withSonarQubeEnv('SonarQube') 
 	   { 
       timeout(time: 1, unit: 'HOURS') { 
            def qg = waitForQualityGate() 
