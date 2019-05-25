@@ -55,3 +55,4 @@ stage('Deploy artifacts')
     jfroglib "JFrogArt1", "./target/*.war", "Snapshot"
    }
 } 
+}
