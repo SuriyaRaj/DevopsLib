@@ -28,6 +28,6 @@ node (label:'Master'){
    }
 stage('Deploy artifacts')
    {
-    JfrogConf 'JFrog_Art1','./target/*.war'",'local-snapshot'
+    JfrogConf 'JFrogArt1','./target/*.war'",'local-snapshot'
    }
 } 
