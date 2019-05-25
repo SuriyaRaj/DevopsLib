@@ -50,7 +50,7 @@ node(label:'master') {
    
    stage('Deploy artifacts')
    {
-    jfroglib "JFrogArt1","./target/*.war","local-snapshot"
+    jfroglib "JFrogArt1","./target/*.war","Snapshot"
    }
    
 }
