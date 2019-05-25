@@ -28,6 +28,6 @@ node {
    }
 stage('Deploy artifacts')
    {
-    JfrogConf "JFrogArt1", "./target/*.war", "local-snapshot"
+    jfroglib "JFrogArt1", "./target/*.war", "local-snapshot"
    }
 } 
