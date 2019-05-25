@@ -1,5 +1,5 @@
 @Library('DevopsLib')_
-node (label:'Master'){
+node {
 
    def mvnHome
 
@@ -28,6 +28,6 @@ node (label:'Master'){
    }
 stage('Deploy artifacts')
    {
-    JfrogConf 'JFrogArt1','./target/*.war','local-snapshot'
+    JfrogConf "JFrogArt1", "./target/*.war", "local-snapshot"
    }
 } 
